@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle at 60% 40%, #ffe082 0%, #f06292 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .mandala-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            color: #ad1457;
+            margin-bottom: 32px;
+            text-shadow: 2px 2px 12px #fff59d, 0 2px 8px #ba68c8;
+            letter-spacing: 2px;
+        }
+        .mandala-container {
+            background: rgba(255, 253, 231, 0.95);
+            border-radius: 50%;
+            box-shadow: 0 8px 32px rgba(240,98,146,0.18);
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 600px) {
+            .mandala-container {
+                padding: 8px;
+            }
+            .mandala-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mandala-title">Mandala Art</div>
+    <div class="mandala-container">
+        <!-- Mandala SVG Art -->
+        <svg width="400" height="400" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="180" fill="#fffde7" stroke="#ffd54f" stroke-width="6"/>
+            <!-- Main petals -->
+            <g>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#f06292" opacity="0.8" transform="rotate(0 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#ba68c8" opacity="0.7" transform="rotate(30 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#4dd0e1" opacity="0.7" transform="rotate(60 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#ffd54f" opacity="0.7" transform="rotate(90 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#81c784" opacity="0.7" transform="rotate(120 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#fbc02d" opacity="0.7" transform="rotate(150 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#f06292" opacity="0.7" transform="rotate(180 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#ba68c8" opacity="0.7" transform="rotate(210 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#4dd0e1" opacity="0.7" transform="rotate(240 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#ffd54f" opacity="0.7" transform="rotate(270 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#81c784" opacity="0.7" transform="rotate(300 200 200)"/>
+                <ellipse cx="200" cy="80" rx="30" ry="80" fill="#fbc02d" opacity="0.7" transform="rotate(330 200 200)"/>
+            </g>
+            <!-- Inner circles -->
+            <circle cx="200" cy="200" r="110" fill="none" stroke="#ba68c8" stroke-width="5" opacity="0.5"/>
+            <circle cx="200" cy="200" r="80" fill="none" stroke="#ffd54f" stroke-width="4" opacity="0.7"/>
+            <circle cx="200" cy="200" r="50" fill="#fff176" stroke="#f06292" stroke-width="3"/>
+            <!-- Center flower -->
+            <g>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#f06292" opacity="0.8" transform="rotate(0 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#ba68c8" opacity="0.7" transform="rotate(45 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#ffd54f" opacity="0.7" transform="rotate(90 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#81c784" opacity="0.7" transform="rotate(135 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#fbc02d" opacity="0.7" transform="rotate(180 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#4dd0e1" opacity="0.7" transform="rotate(225 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#f06292" opacity="0.7" transform="rotate(270 200 200)"/>
+                <ellipse cx="200" cy="170" rx="10" ry="30" fill="#ba68c8" opacity="0.7" transform="rotate(315 200 200)"/>
+            </g>
+            <!-- Center dot -->
+            <circle cx="200" cy="200" r="18" fill="#f06292" stroke="#ad1457" stroke-width="3"/>
+            <circle cx="200" cy="200" r="8" fill="#fffde7" stroke="#ffd54f" stroke-width="2"/>
+        </svg>
+    </div>
+</body>
+</html>
